@@ -225,7 +225,7 @@ public class OmniMovementComponent : MonoBehaviour {
                 return;
             }
 
-            if (!VRDevice.isPresent)
+            if (!UnityEngine.XR.XRDevice.isPresent)
             {
                 cameraReference.gameObject.AddComponent<SmoothMouseLook>();
                 Vector3 adjustedCameraPosition = cameraReference.localPosition;

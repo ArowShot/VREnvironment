@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\Users\008000118\.Rider2019.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\008000118\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_VREnvironment.1644757751.00" t="ExcludeRecursive" />
-    <e p="C:\Users\008000118\VREnvironment" t="IncludeRecursive">
+    <e p="C:\Users\008000118\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_VREnvironment.-1155262153.00" t="ExcludeRecursive" />
+    <e p="C:\Users\008000118\Desktop\VREnvironment" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Day-Night Skyboxes" t="Include">
@@ -12,11 +12,29 @@
             <e p="Readme for Assigning.txt" t="Include" />
           </e>
         </e>
+        <e p="MenuSpawner.cs" t="Include" />
+        <e p="OmniSDK" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="OmniController_Example.cs" t="Include" />
+            <e p="OmniHID" t="Include">
+              <e p="HIDapi.cs" t="Include" />
+              <e p="OmniManager.cs" t="Include" />
+            </e>
+            <e p="OmniMovementCalibration.cs" t="Include" />
+            <e p="OmniMovementComponent.cs" t="Include" />
+            <e p="SetOmniConnectGamepadMode.cs" t="Include" />
+            <e p="SmoothMouseLook.cs" t="Include" />
+          </e>
+        </e>
+        <e p="PointerController.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="GlowScript.cs" t="Include" />
           <e p="HandScript.cs" t="Include" />
           <e p="Interactable.cs" t="Include" />
+          <e p="IVRUIInteraction.cs" t="Include" />
           <e p="PlayerController.cs" t="Include" />
+          <e p="VRUIButton.cs" t="Include" />
+          <e p="VRUISelectable.cs" t="Include" />
         </e>
         <e p="Shaders" t="Include">
           <e p="$self_illuminated_outlined_diffuse_113.shader" t="Include" />
@@ -315,6 +333,7 @@
           <e p="SteamVR_Input_Initialization.cs" t="Include" />
         </e>
         <e p="Triggerable.cs" t="Include" />
+        <e p="VolumeRandomizer.cs" t="Include" />
       </e>
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />

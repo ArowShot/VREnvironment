@@ -9,12 +9,14 @@ public class PlayerController : MonoBehaviour
     public SteamVR_Action_Vector2 movement;
     public SteamVR_Input_Sources handType;
 
+    private OmniMovementComponent _omni;
     private CharacterController _controller;
     private Camera _camera;
     public Transform HeadPosition;
 
     void Start()
     {
+        _omni = GetComponent<OmniMovementComponent>();
         _controller = GetComponent<CharacterController>();
         _camera = GetComponentInChildren<Camera>();
     }
@@ -24,6 +26,11 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (_omni.enabled && !_omni.omniFound)
+        {
+            _omni.enabled = false;
+        }
+        
         var pos = HeadPosition.position - transform.position;
 
         pos.y = 0.5f;
@@ -51,6 +58,17 @@ public class PlayerController : MonoBehaviour
         var direction = HeadPosition.forward * speed * 4 * Time.deltaTime;
         direction.y = (float)yVel;
         _controller.Move(direction);
+        
+        // Omni movement
+        if (_omni.omniFound)
+        {
+            _omni.GetOmniInputForCharacterMovement();
+
+            if(_omni.GetForwardMovement() != Vector3.zero)
+                _controller.Move(_omni.GetForwardMovement());
+            if(_omni.GetStrafeMovement() != Vector3.zero)
+                _controller.Move(_omni.GetStrafeMovement());
+        }
         //transform.Rotate(new Vector3(0, rotationSpeed * speed * 100 * Time.deltaTime, 0));
     }
 }
