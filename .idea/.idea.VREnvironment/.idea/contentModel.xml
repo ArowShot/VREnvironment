@@ -28,6 +28,7 @@
         </e>
         <e p="PointerController.cs" t="Include" />
         <e p="Scripts" t="Include">
+          <e p="fireBallScript.cs" t="Include" />
           <e p="GlowScript.cs" t="Include" />
           <e p="HandScript.cs" t="Include" />
           <e p="Interactable.cs" t="Include" />
