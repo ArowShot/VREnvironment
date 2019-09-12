@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\Users\008000118\.Rider2019.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\008000118\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_VREnvironment.1644757751.00" t="ExcludeRecursive" />
-    <e p="C:\Users\008000118\VREnvironment" t="IncludeRecursive">
+    <e p="C:\Users\008000118\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_VREnvironment.-1155262153.00" t="ExcludeRecursive" />
+    <e p="C:\Users\008000118\Desktop\VREnvironment" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Day-Night Skyboxes" t="Include">
@@ -31,10 +31,12 @@
           <e p="GlowScript.cs" t="Include" />
           <e p="HandScript.cs" t="Include" />
           <e p="Interactable.cs" t="Include" />
+          <e p="ITriggerable.cs" t="Include" />
           <e p="IVRUIInteraction.cs" t="Include" />
           <e p="PlayerController.cs" t="Include" />
           <e p="VRUIButton.cs" t="Include" />
           <e p="VRUISelectable.cs" t="Include" />
+          <e p="WatchTrigger.cs" t="Include" />
         </e>
         <e p="Shaders" t="Include">
           <e p="$self_illuminated_outlined_diffuse_113.shader" t="Include" />
@@ -332,6 +334,7 @@
           <e p="SteamVR_Input_ActionSets.cs" t="Include" />
           <e p="SteamVR_Input_Initialization.cs" t="Include" />
         </e>
+        <e p="TimeManager.cs" t="Include" />
         <e p="Triggerable.cs" t="Include" />
         <e p="VolumeRandomizer.cs" t="Include" />
       </e>

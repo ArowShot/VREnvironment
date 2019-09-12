@@ -38,10 +38,10 @@ public class HandScript : MonoBehaviour
         {
             if (currentInteractable)
             {
-                Triggerable triggerable = currentInteractable.GetComponent<Triggerable>();
-                if (triggerable != null)
+                var triggerables = currentInteractable.GetComponents<ITriggerable>();
+                foreach (var triggerable in triggerables)
                 {
-                    triggerable.Trigger();
+                    triggerable.Trigger(triggerAction.state);
                 }
             }
         }
