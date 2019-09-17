@@ -9,6 +9,8 @@ public class Triggerable : MonoBehaviour, ITriggerable
     public Transform tip;
     public GameObject fireBall;
     public int magic;
+
+    public FireBallController fbc;
     public void Trigger(bool down)
     {
         if (!down)
@@ -33,15 +35,27 @@ public class Triggerable : MonoBehaviour, ITriggerable
                 HideNormally.SetActive(true);
                 break;
         }
+
+
     }
 
     public void Shoot(GameObject projectile)
     {
-        projectile.transform.position = tip.transform.position;
-        projectile.transform.rotation = tip.transform.rotation;
+        //  projectile.transform.position = tip.transform.position;
+        //  projectile.transform.rotation = tip.transform.rotation;
+        GameObject fireBall = FireBallController.SharedInstance.GetPooledObject();
+            if(fireBall != null)
+            {
+                fireBall.transform.position = tip.transform.position;
+                fireBall.transform.rotation = tip.transform.rotation;
+                fireBall.SetActive(true);
+            }
+        
 
         Instantiate<GameObject>(projectile);
 
-        
+
     }
+
+
 }

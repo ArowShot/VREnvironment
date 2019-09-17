@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -25,10 +25,7 @@ public class fireBallScript : MonoBehaviour
         }
         // transform.position += transform.forward /2;  
     }
-    public void FindTarget(RaycastHit hit)
-    {
-        this.target.position = hit.transform.position;
-    }
+  
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.name != "Wand")
@@ -39,9 +36,12 @@ public class fireBallScript : MonoBehaviour
 
     public void explode()
     {
+
         explosion.gameObject.transform.position = transform.position;
         Instantiate<ParticleSystem>(explosion);
-        Destroy(gameObject);
+        gameObject.SetActive(false);
+
+       
     }
 
 
