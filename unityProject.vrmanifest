@@ -5,11 +5,7 @@
       "app_key": "application.generated.unity.vrenvironment.exe",
       "launch_type": "url",
       "url": "steam://launch/",
-<<<<<<< HEAD
-      "action_manifest_path": "C:\\Users\\008000118\\Desktop\\VREnvironment\\actions.json",
-=======
-      "action_manifest_path": "C:\\Users\\005505007\\Desktop\\VRENvironment\\actions.json",
->>>>>>> d85fd33d615366dcf80cf7cc8d583cf7335645c2
+      "action_manifest_path": ".\\VREnvironment\\actions.json",
       "strings": {
         "en_us": {
           "name": "VREnvironment [Testing]"
